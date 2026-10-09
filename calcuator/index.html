@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-display">
+            <input class="display-result" placeholder="000" readonly>
+        </div>
+        <div class="container-num-opes">
+            <div class="container-numbers">
+            <button class="numbers" id="seven" onclick="appendToDisplay('7')">7</button>
+            <button class="numbers" id="eight" onclick="appendToDisplay('8')">8</button>
+            <button class="numbers" id="nine" onclick="appendToDisplay('9')">9</button>
+
+            <button class="numbers" id="four" onclick="appendToDisplay('4')">4</button>
+            <button class="numbers" id="five" onclick="appendToDisplay('5')">5</button>
+            <button class="numbers" id="six" onclick="appendToDisplay('6')">6</button>
+
+            <button class="numbers" id="one" onclick="appendToDisplay('1')">1</button>
+            <button class="numbers" id="two" onclick="appendToDisplay('2')">2</button>
+            <button class="numbers" id="three" onclick="appendToDisplay('3')">3</button>
+
+            <button class="numbers" id="clear" onclick="clearDisplay()">AC</button>
+            <button class="numbers" id="zero" onclick="appendToDisplay('0')">0</button>
+            <button class="numbers" id="decimal" onclick="appendToDisplay('.')">.</button>
+        </div>
+
+        <div class="container-operations">
+
+            <button class="operations" onclick="appendToDisplay('+')">+</button>
+            <button class="operations" onclick="appendToDisplay('-')">-</button>
+            <button class="operations" onclick="appendToDisplay('*')">*</button>
+            <button class="operations" onclick="appendToDisplay('/')">/</button>
+            <button class="operations" onclick="calculate()">=</button>
+
+        </div>
+        </div>
+
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
